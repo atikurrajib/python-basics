@@ -1,52 +1,32 @@
-# byte-compiled / optimized files
-__pycache__/
-*.py[cod]
-*$py.class
+# If you prefer the allow list template instead of the deny list, see community template:
+# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
+#
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
 
-# virtual environments
-venv/
-.venv/
-env/
-.env/
+# Test binary, built with `go test -c`
+*.test
 
-# environment variables
+# Code coverage profiles and other test artifacts
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# env file
 .env
-.env.*
 
-# jupyter notebooks
-.ipynb_checkpoints/
-*/.ipynb_checkpoints/
-
-# prevents uploading massive model files to github
-*.pt
-*.pth
-*.onnx
-*.safetensors
-*.h5
-*.pkl
-
-# huggingface and local caching directories
-.cache/
-wandb/
-
-# ignore large datasets and document files
-*.csv
-*.tsv
-*.parquet
-*.jsonl
-
-# local vector database storage (e.g., chromadb, faiss)
-chroma_db/
-faiss_index/
-vector_store/
-
-# directories for raw and processed documents used for embeddings
-data/raw/
-data/processed/
-
-# os & editor files
-.DS_Store
-.idea/
-.vscode/
-*.swp
-*.swo
+# Editor/IDE
+# .idea/
+# .vscode/
